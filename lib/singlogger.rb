@@ -7,10 +7,11 @@
 # (since it's a little weird to create new instances all over the place)
 ##
 
-require "singlogger/version"
 require 'logger'
 
 class SingLogger < ::Logger
+  VERSION = "0.0.1"
+
   @@instance = nil
 
   private

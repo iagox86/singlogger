@@ -1,11 +1,7 @@
 require "test_helper"
 
-class SingloggerTest < Minitest::Test
+class SingLoggerTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Singlogger::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert false
+    refute_nil ::SingLogger::VERSION
   end
 end
