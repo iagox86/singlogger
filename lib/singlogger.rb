@@ -29,7 +29,7 @@ class SingLogger < ::Logger
       return @@instance
     end
 
-    @@instance = Logger.new(level: (level || ::Logger::INFO), sink: sink)
+    @@instance = SingLogger.new(level: (level || ::Logger::INFO), sink: sink)
     return @@instance
   end
 
